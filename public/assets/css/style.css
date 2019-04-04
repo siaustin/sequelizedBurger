@@ -1,0 +1,72 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  background-image: url("../img/best-burger.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  color: rgb(255, 251, 248);
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+}
+html {
+  height: 100%;
+}
+.row {
+  height: 100%;
+}
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+.form-control {
+  background-color: lightblue;
+  border-color: rgba(255, 255, 255, 0.555);
+  font-size: 20px;
+}
+.list-burgers {
+  height: 400px;
+  overflow: scroll;
+  margin-top: 40px;
+}
+.input-group {
+  padding-top: 70px;
+}
+.devour {
+  float: right;
+  font-size: 12px;
+}
+li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+i {
+  color: rgba(255, 255, 255, 0.705);
+}
+hr {
+  background-color: rgba(255, 255, 255, 0.274);
+}
+.eatenburgers {
+  color: white;
+  margin-top: 100px;
+  overflow: scroll;
+  height: 400px;
+}
+.devour {
+  font-size: 20px;
+}
+.btn-outline-warning {
+  color: lightblue;
+  border-color: white;
+}
+.btn-outline-warning:hover {
+  background-color: lightblue;
+  color: black;
+  border-color: white;
+}
