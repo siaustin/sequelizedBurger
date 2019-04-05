@@ -3,7 +3,7 @@
     <div class="col-sm-4">
       <h1>YOUR ORDER: </h1>
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Enter a burger you want to eat">
+        <input type="text" class="form-control burger_name" placeholder="Enter a burger you want to eat">
         <div class="input-group-append">
           <button id="submit" class="btn btn-outline-secondary" type="button">Submit</button>
         </div>
@@ -11,9 +11,10 @@
       <ul class="list-burgers">
         {{#each burgers}}
         {{#unless devoured}}
-        <li>
-          <span>&nbsp;&nbsp;</span>{{burger_name}}<button class="btn btn-outline-warning devour hoverEffect"
-            data-id="{{id}}">DEVOUR
+        <li class="devour">
+          <span>&nbsp;&nbsp;</span>{{burger_name}}
+          <input type="text" class="form-control customer_name" placeholder="Customer">
+          <button class="btn btn-outline-warning hoverEffect" data-id="{{id}}">DEVOUR
             IT!</button>
         </li>
         <hr>
@@ -23,11 +24,12 @@
     </div>
     <div class="col-sm-4 bg"></div>
     <div class="col-sm-4 bg2">
-      <h1>Eaten Burgers: </h1>
+      <h1>Devoured Burgers: </h1>
       <ul class="eatenburgers">
         {{#each burgers}}
         {{#if devoured}}
         <li> <span>&nbsp;&nbsp;</span>{{burger_name}}</li>
+        <span>&nbsp;&nbsp;</span>(Eaten by {{Customer.customer_name}})</li>
         <hr>
         {{/if}}
         {{/each}}
